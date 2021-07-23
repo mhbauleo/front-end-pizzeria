@@ -1,0 +1,26 @@
+/* Main */
+
+main {
+	grid-area: main;
+	background-image: url("../img/bg.jpg");
+}
+
+.padre_titulo {
+	@include flex_element($justify: center, $align: center);
+	background-image: url("../img/pizza.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 80vh;
+}
+
+.titulo {
+	color: white;
+	font-size: 250%;
+}
+
+.estilo_h2 {
+	text-align: center;
+	margin: 5% 0px;
+	font-size: 200%;
+}

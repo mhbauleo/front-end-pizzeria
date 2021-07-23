@@ -1,0 +1,15 @@
+@import 'utilities/variables.scss';
+@import 'utilities/mixins';
+
+@import 'base/reset.scss';
+
+@import 'layout/header.scss';
+@import 'layout/main.scss';
+@import 'layout/footer.scss';
+@import 'layout/animaciones.scss';
+
+@import 'views/home.scss';
+@import 'views/nosotros.scss';
+@import 'views/catalogo.scss';
+@import 'views/promociones.scss';
+@import 'views/contacto.scss';

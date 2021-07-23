@@ -1,0 +1,45 @@
+/* Catalogo */
+
+@each $comida in pizzas, empanadas {
+	.catalogo__#{$comida} {
+		@include flex_element($justify: center);
+		
+		@if $comida == empanadas {
+			margin-bottom: 5%;
+			td {
+				border: none;
+			}
+		}
+	}
+}
+
+/* Tabla */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	li {
+		margin-bottom: 5px;
+	}
+}
+
+table, td, th {
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+th, td {
+	padding: 15px;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+/* Tablet y Desktop*/
+@media (min-width: 577px) {
+	/* Table */
+	table {
+		width: 80%;
+	}
+}

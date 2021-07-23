@@ -1,0 +1,21 @@
+/* Home */
+
+.home__imagenes {
+	@include flex_element($direction: column, $wrap: wrap, $justify: center, $align: center);
+	div {
+		margin-bottom: 15px;
+		width: 18rem;
+	}
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+	.home__imagenes {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.home__carousel {
+		margin: 10%;
+	}
+}

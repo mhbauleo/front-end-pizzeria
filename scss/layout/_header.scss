@@ -1,0 +1,64 @@
+@import 'utilities/variables.scss';
+
+/* Header  */
+
+.header {
+	grid-area: header;
+	background-color: $bg-color-header;
+}
+
+.header__responsive {
+	padding: 0;
+	button {
+		border: none;
+	}
+}
+
+.header__desktop {
+	display: none;
+}
+
+.header__logo {
+	@include flex_element($justify: center, $align: center);
+	width: 100px;
+}
+
+.menu {
+	@include flex_element($direction: column, $wrap: nowrap, $justify: center, $align: center);
+	.menu__enlace{
+		color: black;
+		text-decoration: none;
+	}
+
+	.menu__enlace--actual {
+		color: $color-enlace-actual;
+		text-decoration: none;
+	}
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+
+	/* Header */
+
+	.header__responsive {
+		display: none;		
+	}
+
+	.header__desktop {
+		flex-grow: 1;
+		@include flex_element($justify: space-between);
+	}
+
+	.header__logo {
+		margin-left: 20px;
+	}
+
+	.menu {
+		flex-direction: row;
+		justify-content: space-around;
+		li {
+			margin-right: 20px;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+/* Nosotros */
+
+.nuestra_historia {
+	background-image: url("../img/fondo_pizza.jpg");
+	background-size: 100% 100%;
+	.nuestra_historia__texto {
+		color: white;
+		height: 610px;
+		font-size: 90%;
+		.nuestra_historia__texto--h2 {
+			text-align: center;
+			padding-top: 10%;
+			font-size: 200%;
+		}
+		.nuestra_historia__texto--p {
+			padding: 10%;
+		}
+	}
+}
+
+/* Tablet y Desktop */
+@media (min-width: 577px) {
+	.nuestra_historia {
+		background-image: url("../img/fondo_pizza_horizontal.jpg");
+		.nuestra_historia__texto {
+			width: 70%;
+			@include flex_element($direction: column, $justify: center);
+		}
+	}
+}

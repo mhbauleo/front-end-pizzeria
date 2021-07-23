@@ -1,0 +1,37 @@
+/* Animaciones */
+
+$duracion_de_animacion: (
+	logo: 0.5s,
+	menu: 1s
+);
+
+@each $animacion, $duracion in $duracion_de_animacion {
+	.animation_#{$animacion} {
+		@include animaciones(efecto_#{$animacion}, #{$duracion});
+	}
+}
+
+/* Línea de tiempo */
+@keyframes efecto_logo {
+	/* inicio */
+	0% {
+		transform: translateY(-110px);
+	}
+
+	/* final  */
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes efecto_menu {
+	/* inicio */
+	0% {
+		opacity: 0;
+	}
+
+	/* final  */
+	100% {
+		opacity: 1;
+	}
+}

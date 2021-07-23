@@ -1,0 +1,35 @@
+/* Footer */
+
+footer {
+	grid-area: footer;
+	@include flex_element($justify: space-between);
+	background-color: $bg-color-footer;
+}
+
+.footer__logo {
+	@include flex_element($justify: center, $align: center);
+	width: 100px;
+	margin-left: 5%;
+}
+
+.redes {
+	@include flex_element($justify: flex-end, $align: center);
+	width: 100%;
+	height: 100%;
+	.redes__enlace {
+		width: 30px;
+		margin-right: 5%;
+	}
+}
+
+.redes__imagen--facebook {
+	width: 100%;
+}
+
+.redes__imagen--twitter{
+	width: 80%;
+}
+
+.redes__imagen--instagram {
+	width: 80%;
+}

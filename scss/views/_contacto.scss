@@ -1,0 +1,26 @@
+@import '../utilities/variables.scss';
+
+/* Contacto */
+
+.formulario {
+	@include flex_element($direction: column, $wrap: nowrap);
+	padding: 0% 20% 10% 20%;
+
+	.formulario__enviar {
+		color: white;
+		background-color: $color-form;
+		border-color: $color-form;
+	}
+
+	.formulario__enviar:hover {
+		color: $color-form;
+		background-color: white;
+		border-color: $color-form;
+	}
+}
+
+.form-control:focus {
+	background-color: $color-form-rgba;
+	border-color: $color-form;
+	box-shadow: 0 0 0 0.25rem $color-form-rgba;
+}

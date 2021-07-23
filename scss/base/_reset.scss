@@ -1,0 +1,26 @@
+/* RESETEO CSS */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-areas: 
+		"header"
+		"main"
+		"footer";
+	grid-template-rows: auto auto 100px;
+}
+
