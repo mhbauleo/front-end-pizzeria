@@ -231,8 +231,9 @@ tr:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5% 0px; }
-  .promos .contenedor_promo {
+  margin: 5% 0px;
+  color: black; }
+  .promos .promos__contenedor_promo {
     max-width: 250px; }
   .promos .promos__promo {
     background-color: #9D0208;

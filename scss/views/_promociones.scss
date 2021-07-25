@@ -3,13 +3,14 @@
 .promos {
 	@include flex_element($direction: column, $justify: space-evenly, $align: center);
 	margin: 5% 0px;
+	color: $color-promos;
 
-	.contenedor_promo {
+	.promos__contenedor_promo {
 		max-width: 250px;
 	}
 
 	.promos__promo {
-		background-color: $color-promo;
+		background-color: $bg-color-promo;
 		border: 1px solid black;
 		border-radius: 10%;
 		transition: transform 1s;
