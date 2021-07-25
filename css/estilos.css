@@ -114,15 +114,6 @@ footer {
     width: 30px;
     margin-right: 5%; }
 
-.redes__imagen--facebook {
-  width: 100%; }
-
-.redes__imagen--twitter {
-  width: 80%; }
-
-.redes__imagen--instagram {
-  width: 80%; }
-
 /* Animaciones */
 .animation_logo {
   animation-name: efecto_logo;
