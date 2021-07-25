@@ -1,6 +1,6 @@
 /* Footer */
 
-footer {
+.footer {
 	grid-area: footer;
 	@include flex_element($justify: space-between);
 	background-color: $bg-color-footer;
