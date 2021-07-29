@@ -3,17 +3,17 @@
 .header {
 	grid-area: header;
 	background-color: $bg-color-header;
-}
 
-.header__responsive {
-	padding: 0;
-	button {
-		border: none;
+	.header__responsive {
+		padding: 0;
+		button {
+			border: none;
+		}
 	}
-}
 
-.header__desktop {
-	display: none;
+	.header__desktop {
+		display: none;
+	}
 }
 
 .header__logo {
@@ -23,6 +23,7 @@
 
 .menu {
 	@include flex_element($direction: column, $wrap: nowrap, $justify: center, $align: center);
+	
 	.menu__enlace{
 		color: black;
 		text-decoration: none;
@@ -39,13 +40,16 @@
 
 	/* Header */
 
-	.header__responsive {
-		display: none;		
-	}
+	.header {
 
-	.header__desktop {
-		flex-grow: 1;
-		@include flex_element($justify: space-between);
+		.header__responsive {
+			display: none;
+		}
+
+		.header__desktop {
+			flex-grow: 1;
+			@include flex_element($justify: space-between);
+		}
 	}
 
 	.header__logo {

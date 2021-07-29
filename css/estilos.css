@@ -21,14 +21,12 @@ ul {
 .header {
   grid-area: header;
   background-color: white; }
-
-.header__responsive {
-  padding: 0; }
-  .header__responsive button {
-    border: none; }
-
-.header__desktop {
-  display: none; }
+  .header .header__responsive {
+    padding: 0; }
+    .header .header__responsive button {
+      border: none; }
+  .header .header__desktop {
+    display: none; }
 
 .header__logo {
   display: flex;
@@ -52,9 +50,9 @@ ul {
 /* Desktop */
 @media (min-width: 992px) {
   /* Header */
-  .header__responsive {
+  .header .header__responsive {
     display: none; }
-  .header__desktop {
+  .header .header__desktop {
     flex-grow: 1;
     display: flex;
     justify-content: space-between; }
@@ -70,25 +68,22 @@ ul {
 main {
   grid-area: main;
   background-image: url("../img/bg.jpg"); }
-
-.padre_titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/pizza.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 80vh; }
-
-.titulo {
-  color: white;
-  font-size: 250%; }
-
-.estilo_h2 {
-  text-align: center;
-  margin: 5% 0px;
-  font-size: 200%; }
+  main .padre_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh; }
+    main .padre_titulo .titulo {
+      color: white;
+      font-size: 250%; }
+  main .estilo_h2 {
+    text-align: center;
+    margin: 5% 0px;
+    font-size: 200%; }
 
 /* Footer */
 .footer {
@@ -96,23 +91,21 @@ main {
   display: flex;
   justify-content: space-between;
   background-color: #F48C06; }
-
-.footer__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  margin-left: 5%; }
-
-.redes {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 100%; }
-  .redes .redes__enlace {
-    width: 30px;
-    margin-right: 5%; }
+  .footer .footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-left: 5%; }
+  .footer .redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .footer .redes .redes__enlace {
+      width: 30px;
+      margin-right: 5%; }
 
 /* Animaciones */
 .animation_logo {
