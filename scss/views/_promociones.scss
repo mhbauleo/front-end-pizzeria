@@ -7,33 +7,32 @@
 
 	.promos__contenedor_promo {
 		max-width: 250px;
-	}
+		.promos__promo {
+			background-color: $bg-color-promo;
+			border: 1px solid black;
+			border-radius: 10%;
+			transition: transform 1s;
+			.card-header {
+				border-bottom: none;
+			}
 
-	.promos__promo {
-		background-color: $bg-color-promo;
-		border: 1px solid black;
-		border-radius: 10%;
-		transition: transform 1s;
-		ul {
-			margin: 0px;
-			padding: 0px;
-			li {
-				text-align: center;
+			ul {
+				margin: 0px;
+				padding: 0px;
+				li {
+					text-align: center;
+				}
+			}
+
+			.price {
+				font-size: 200%;
 			}
 		}
+
+		.promos__promo:hover {
+			transform: scale(1.2, 1.2);
+		}
 	}
-
-	.promos__promo:hover {
-		transform: scale(1.2, 1.2);
-	}
-}
-
-.promos__promo .card-header {
-	border-bottom: none;
-}
-
-.price {
-	font-size: 200%;
 }
 
 /* Desktop */

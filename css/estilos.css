@@ -235,24 +235,22 @@ tr:hover {
   color: black; }
   .promos .promos__contenedor_promo {
     max-width: 250px; }
-  .promos .promos__promo {
-    background-color: #9D0208;
-    border: 1px solid black;
-    border-radius: 10%;
-    transition: transform 1s; }
-    .promos .promos__promo ul {
-      margin: 0px;
-      padding: 0px; }
-      .promos .promos__promo ul li {
-        text-align: center; }
-  .promos .promos__promo:hover {
-    transform: scale(1.2, 1.2); }
-
-.promos__promo .card-header {
-  border-bottom: none; }
-
-.price {
-  font-size: 200%; }
+    .promos .promos__contenedor_promo .promos__promo {
+      background-color: #9D0208;
+      border: 1px solid black;
+      border-radius: 10%;
+      transition: transform 1s; }
+      .promos .promos__contenedor_promo .promos__promo .card-header {
+        border-bottom: none; }
+      .promos .promos__contenedor_promo .promos__promo ul {
+        margin: 0px;
+        padding: 0px; }
+        .promos .promos__contenedor_promo .promos__promo ul li {
+          text-align: center; }
+      .promos .promos__contenedor_promo .promos__promo .price {
+        font-size: 200%; }
+    .promos .promos__contenedor_promo .promos__promo:hover {
+      transform: scale(1.2, 1.2); }
 
 /* Desktop */
 @media (min-width: 992px) {
