@@ -7,11 +7,13 @@
 
 	.promos__contenedor_promo {
 		max-width: 250px;
+
 		.promos__promo {
 			background-color: $bg-color-promo;
 			border: 1px solid black;
 			border-radius: 10%;
 			transition: transform 1s;
+
 			.card-header {
 				border-bottom: none;
 			}
@@ -19,6 +21,7 @@
 			ul {
 				margin: 0px;
 				padding: 0px;
+				
 				li {
 					text-align: center;
 				}
