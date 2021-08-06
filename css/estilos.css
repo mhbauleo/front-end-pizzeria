@@ -149,6 +149,8 @@ main {
   .home__imagenes div {
     margin-bottom: 15px;
     width: 18rem; }
+    .home__imagenes div .card-title {
+      font-size: 1.25rem; }
 
 /* Desktop */
 @media (min-width: 992px) {
