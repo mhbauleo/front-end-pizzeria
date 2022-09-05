@@ -1,5 +1,5 @@
 # front-end-pizzeria
-Sitio web para [pizzería](https://mhbauleo.github.io/front-end-pizzeria/index.html) utilizando html y css.
+Sitio web para pizzería utilizando html y css. [Link](https://mhbauleo.github.io/front-end-pizzeria/index.html) al sitio.
 
 ## Construido con 🛠️
 
